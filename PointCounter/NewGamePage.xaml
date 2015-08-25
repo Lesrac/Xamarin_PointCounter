@@ -16,12 +16,18 @@
 			<TableView Intent="Form">
 				<TableRoot>
 					<TableSection Title="New Game">
-						<EntryCell Keyboard="Text" Label="Game Name" Placeholder="Uno" />
-						<EntryCell Keyboard="Numeric" Label="Players" Placeholder="2" />
+						<EntryCell Keyboard="Text" Label="Game Name" Placeholder="Uno" x:Name="gameNameCell"
+							Text="{Binding GameName}"/>
+						<EntryCell Keyboard="Numeric" Label="Players" Placeholder="2" x:Name="playersCell" 
+							Text="{Binding Players}"/>
 					</TableSection>
 				</TableRoot>
 			</TableView>
 			<Button x:Name="createGameButton" Text="Create Game" Clicked="OnCallCreateGame"/>
+<!--			<Label x:Name="gameLabel" 
+				BindingContext="{x:Reference Name=gameNameCell}"
+				Text="{Binding Text,
+					StringFormat='{0}'}"/> -->
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

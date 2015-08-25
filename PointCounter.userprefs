@@ -1,14 +1,12 @@
 ﻿<Properties StartupItem="Droid\PointCounter.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Android_Nexus_4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PointCounter\MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PointCounter\NewGamePage.xaml.cs">
     <Files>
-      <File FileName="PointCounter\PointCounter.cs" Line="34" Column="1" />
+      <File FileName="PointCounter\PointCounter.cs" Line="1" Column="1" />
       <File FileName="PointCounter\MainPage.xaml.cs" Line="17" Column="1" />
       <File FileName="PointCounter\Game.cs" Line="1" Column="1" />
-      <File FileName="PointCounter\NewGamePage.xaml" Line="13" Column="15" />
-      <File FileName="PointCounter\NewGamePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="PointCounter\NewGamePlayersPage.xaml" Line="4" Column="2" />
-      <File FileName="PointCounter\NewGamePlayersPage.xaml.cs" Line="13" Column="4" />
+      <File FileName="PointCounter\NewGamePage.xaml" Line="20" Column="31" />
+      <File FileName="PointCounter\NewGamePage.xaml.cs" Line="23" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

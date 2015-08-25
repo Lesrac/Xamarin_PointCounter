@@ -3,5 +3,13 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="PointCounter.NewGamePlayersPage">
 	<ContentPage.Content>
+		<StackLayout VerticalOptions="FillAndExpand"
+					 HorizontalOptions="FillAndExpand"
+					 Orientation="Vertical"
+					 Spacing="15">
+			<Label x:Name="testVarLabel" 
+				BindingContext="{x:Reference Name=testVar}"
+				Text="{Binding TestVar"/>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
