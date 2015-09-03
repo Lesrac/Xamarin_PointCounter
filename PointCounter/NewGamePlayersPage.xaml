@@ -1,15 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:PointCounter" 
 	x:Class="PointCounter.NewGamePlayersPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:GameCreationViewModel x:Key="gameCreationViewModel" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand"
 					 HorizontalOptions="FillAndExpand"
 					 Orientation="Vertical"
-					 Spacing="15">
-			<Label x:Name="testVarLabel" 
-				BindingContext="{x:Reference Name=testVar}"
-				Text="{Binding TestVar"/>
+					 Spacing="15"
+					 BindingContext="{StaticResource gameCreationViewModel}">
+			<Label x:Name="gameLabel" 
+				Text="{Binding GameName}"/> 
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
