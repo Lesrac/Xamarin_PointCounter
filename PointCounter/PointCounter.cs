@@ -12,7 +12,9 @@ namespace PointCounter
 		{
 			// The root page of your application
 			Games = new List<Game> ();
+			GameCreationViewModel gcvm = new GameCreationViewModel();
 			MainPage = new NavigationPage (new PointCounter.MainPage ());
+			MainPage.DataContext = gcvm;
 		}
 
 		public static void addGame (Game game)

@@ -13,8 +13,7 @@
 		<StackLayout VerticalOptions="FillAndExpand"
 					 HorizontalOptions="FillAndExpand"
 					 Orientation="Vertical"
-					 Spacing="15"
-					 BindingContext="{StaticResource gameCreationViewModel}">
+					 Spacing="15">
 			<Label x:Name="gameLabel" 
 				Text="{Binding GameName}"/> 
 		</StackLayout>

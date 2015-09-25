@@ -16,7 +16,9 @@ namespace PointCounter
 		void OnCallCreateGame (object sender, EventArgs e)
 		{
 			//		var game = new Game (gameName, players);
+			
 			Navigation.PushAsync (new NewGamePlayersPage ());
+			
 		}
        
 	}
