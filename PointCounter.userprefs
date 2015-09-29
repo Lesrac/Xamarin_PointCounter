@@ -1,13 +1,15 @@
 ﻿<Properties StartupItem="Droid\PointCounter.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Android_Nexus_4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PointCounter\ViewModels\GameCreationViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PointCounter\NewGamePlayersPage.xaml">
     <Files>
-      <File FileName="PointCounter\PointCounter.cs" Line="1" Column="1" />
+      <File FileName="PointCounter\ViewModels\GameCreationViewModel.cs" Line="41" Column="6" />
+      <File FileName="PointCounter\ViewModels\OrganizationalViewModel.cs" Line="1" Column="1" />
+      <File FileName="PointCounter\MainPage.xaml" Line="1" Column="1" />
       <File FileName="PointCounter\MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="PointCounter\Game.cs" Line="1" Column="1" />
-      <File FileName="PointCounter\NewGamePage.xaml.cs" Line="25" Column="1" />
-      <File FileName="PointCounter\ViewModels\GameCreationViewModel.cs" Line="23" Column="35" />
-      <File FileName="PointCounter\NewGamePage.xaml" Line="4" Column="45" />
+      <File FileName="PointCounter\PointCounter.cs" Line="1" Column="1" />
+      <File FileName="PointCounter\OldGamesPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="PointCounter\OldGamesPage.xaml" Line="19" Column="24" />
+      <File FileName="PointCounter\NewGamePlayersPage.xaml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

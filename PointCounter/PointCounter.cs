@@ -14,7 +14,7 @@ namespace PointCounter
 			Games = new List<Game> ();
 			GameCreationViewModel gcvm = new GameCreationViewModel();
 			MainPage = new NavigationPage (new PointCounter.MainPage ());
-			MainPage.DataContext = gcvm;
+			MainPage.BindingContext = gcvm;
 		}
 
 		public static void addGame (Game game)

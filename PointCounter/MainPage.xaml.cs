@@ -14,13 +14,17 @@ namespace PointCounter
 
 		void OnCallNewGame (object sender, EventArgs e)
 		{
-			Navigation.PushAsync (new NewGamePage ());
+            var page = new NewGamePage();
+            page.BindingContext = this.BindingContext;
+			Navigation.PushAsync (page);
 		}
 
 		void OnCallOldGames (object sender, EventArgs e)
 		{
-			Navigation.PushAsync (new OldGamesPage ());
-		}
+            var page = new OldGamesPage();
+            page.BindingContext = this.BindingContext;
+            Navigation.PushAsync(page);
+        }
 	}
 }
 

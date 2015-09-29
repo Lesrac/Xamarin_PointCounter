@@ -5,22 +5,21 @@ using Xamarin.Forms;
 
 namespace PointCounter
 {
-	public partial class NewGamePage : ContentPage
-	{
+    public partial class NewGamePage : ContentPage
+    {
 
-		public NewGamePage ()
-		{
-			InitializeComponent ();
-		}
+        public NewGamePage()
+        {
+            InitializeComponent();
+        }
 
-		void OnCallCreateGame (object sender, EventArgs e)
-		{
-			//		var game = new Game (gameName, players);
-			
-			Navigation.PushAsync (new NewGamePlayersPage ());
-			
-		}
-       
-	}
+        void OnCallCreateGame(object sender, EventArgs e)
+        {
+            var page = new NewGamePlayersPage();
+            page.BindingContext = this.BindingContext;
+            Navigation.PushAsync(page);
+        }
+
+    }
 }
 

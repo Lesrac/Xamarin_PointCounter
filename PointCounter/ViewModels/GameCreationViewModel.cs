@@ -3,57 +3,29 @@ using System.ComponentModel;
 
 namespace PointCounter
 {
-	public class GameCreationViewModel : INotifyPropertyChanged
-	{
+    public class GameCreationViewModel : ViewModelBase
+    {
 
-		public event PropertyChangedEventHandler PropertyChanged;
+        private String gameName = "";
+        private int? players = 0;
 
-		private String gameName = "";
-		private int? players = 0;
+        public GameCreationViewModel()
+        {
+        }
 
-		public GameCreationViewModel ()
-		{
-		}
+        public String GameName
+        {
+            get { return gameName; }
+            set { SetProperty(ref gameName, value); }
+        }
 
-		public String GameName {
-			get {
-				return gameName;
-			}
-			set {
-				if (!gameName.Equals (value))
-				{
-					gameName = value;
-
-					OnPropertyChanged ("GameName");
-
-				}
-			}
-		}
-
-		public int? Players {
-			get {
-				return players;
-			}
-			set {
-				if (players != value)
-				{
-					players = value;
-
-					OnPropertyChanged ("Players");
-
-				}
-			}
-		}
-
-		protected void OnPropertyChanged (string propertyName)
-		{
-			PropertyChangedEventHandler handler = PropertyChanged;
-
-			if (handler != null)
-			{
-				PropertyChanged (this, new PropertyChangedEventArgs (propertyName));
-			}
-		}
-	}
+        public int? Players
+        {
+            get
+            { return players; }
+            set
+            { SetProperty(ref players, value); }
+        }
+    }
 }
 
